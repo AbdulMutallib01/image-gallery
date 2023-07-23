@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.425);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.329);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.search-result {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.image {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 410px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.329);
+  overflow: hidden;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.image img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image img:hover {
+  opacity: 0.8;
+}
+
+a {
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+  padding: 0.7rem;
+  text-transform: capitalize;
+  display: block;
+}
+
+#show-more {
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.329);
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin: 30px auto;
+  display: block;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    width: 100%;
+  }
+}
